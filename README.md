@@ -1,12 +1,46 @@
-# React + Vite
+# PowerLogs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![PowerLogs Logo](./public/logo.png)
 
-Currently, two official plugins are available:
+**PowerLogs** es una aplicación web completa diseñada para el seguimiento detallado del entrenamiento en el gimnasio. Permite a los usuarios gestionar sus rutinas, registrar sus récords personales (PRs), y monitorear su progreso físico a lo largo del tiempo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características Principales
 
-## Expanding the ESLint configuration
+* **Gestión de Rutinas:**
+    * Crea y personaliza múltiples rutinas de entrenamiento.
+    * Organiza las rutinas por días (ej: Día de Empuje, Día de Pierna).
+    * Añade, edita, y reordena ejercicios dentro de cada día con una interfaz de arrastrar y soltar (drag and drop).
+    * Duplica rutinas y días completos para una configuración rápida.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Seguimiento de Entrenamiento:**
+    * Visualiza tu rutina activa y marca las series como completadas.
+    * Registra el peso y las repeticiones de tus levantamientos para generar récords personales.
+    * Monitorea el progreso semanal de tu rutina con una barra de progreso.
+
+* **Récords Personales (PRs):**
+    * Un dashboard dedicado para visualizar tus PRs en diferentes ejercicios.
+    * Gráficos dinámicos que muestran la progresión de tu e1RM, peso levantado y volumen a lo largo del tiempo.
+    * Marca tus ejercicios favoritos para un acceso rápido.
+    * Filtros avanzados por grupo muscular, fecha, y más.
+
+* **Seguimiento Corporal:**
+    * Registra tu peso, porcentaje de grasa corporal y masa muscular.
+    * Visualiza tu progreso con gráficos de evolución corporal.
+    * Calcula automáticamente tu IMC (Índice de Masa Corporal).
+
+* **Gestión de Datos:**
+    * Define tus propios grupos musculares con colores personalizados.
+    * Crea subcategorías para organizar mejor tus ejercicios.
+    * Añade y edita tu propia base de datos de ejercicios, asignando metas y notas.
+
+## Tecnologías Utilizadas
+
+* **Frontend:**
+    * React
+    * Vite
+    * Tailwind CSS
+* **Backend y Base de Datos:**
+    * Firebase (Firestore, Authentication)
+* **Librerías Adicionales:**
+    * Recharts para la visualización de datos.
+    * dnd-kit para la funcionalidad de arrastrar y soltar.
